@@ -41,6 +41,12 @@ class RomanNumeralSpec extends Specification {
     102    || 'CII'
     323    || 'CCCXXIII'
     450    || 'CDL'
+    500    || 'D'
+    900    || 'CM'
+    1000   || 'M'
+    1985   || 'MCMLXXXV'
+    2014   || 'MMXIV'
+    3876   || 'MMMDCCCLXXVI'
 
 	}
 
