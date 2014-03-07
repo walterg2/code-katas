@@ -29,6 +29,11 @@ class RomanNumeralSpec extends Specification {
     5      || 'V'
     9      || 'IX'
     10     || 'X'
+    13     || 'XIII'
+    17     || 'XVII'
+    25     || 'XXV'
+    32     || 'XXXII'
+    
 
 	}
 
