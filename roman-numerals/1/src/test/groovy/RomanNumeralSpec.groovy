@@ -40,6 +40,7 @@ class RomanNumeralSpec extends Specification {
     95     || 'XCV'
     102    || 'CII'
     323    || 'CCCXXIII'
+    450    || 'CDL'
 
 	}
 

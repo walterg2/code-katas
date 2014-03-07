@@ -7,6 +7,7 @@
 class RomanNumeral {
 
 	def ARABIC_TO_ROMAN = [
+    400 : 'CD',
     100 : 'C',
      90 : 'XC',
      50 : 'L',
