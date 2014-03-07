@@ -7,14 +7,22 @@
 class RomanNumeral {
 
 	def ARABIC_TO_ROMAN = [
-    1 : 'I',
-    4 : 'IV',
-    5 : 'V',
+    10 : 'X',
     9 : 'IX',
-    10 : 'X'
+    5 : 'V',
+    4 : 'IV',
+    1 : 'I'
 	]
 
     def translate(def number) {
-    	ARABIC_TO_ROMAN[number]
+      def result = ''
+    	ARABIC_TO_ROMAN.each {
+        while (number > it.key - 1) {
+          result += it.value
+          number -= it.key
+        }
+      }
+
+      result
     }
 }
