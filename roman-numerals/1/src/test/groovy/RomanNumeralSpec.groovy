@@ -65,8 +65,27 @@ class RomanNumeralSpec extends Specification {
     roman           || arabic
     'I'             || 1
     'II'            || 2
+    'IV'            || 4
     'V'             || 5
     'X'             || 10
+    'XIII'          || 13
+    'XVII'          || 17
+    'XXV'           || 25
+    'XXXII'         || 32
+    'XLVII'         || 47
+    'LV'            || 55
+    'LXVII'         || 67
+    'LXXXII'        || 82
+    'XCV'           || 95
+    'CII'           || 102
+    'CCCXXIII'      || 323
+    'CDL'           || 450
+    'D'             || 500
+    'CM'            || 900
+    'M'             || 1000
+    'MCMLXXXV'      || 1985
+    'MMXIV'         || 2014
+    'MMMDCCCLXXVI'  || 3876
 
   }
 
