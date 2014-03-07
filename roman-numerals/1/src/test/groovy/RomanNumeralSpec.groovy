@@ -6,29 +6,25 @@
  */
 
 import spock.lang.Specification
+import spock.lang.Unroll
 
 class RomanNumeralSpec extends Specification {
 
-	def 'RomanNumerals can translate 1 to Roman'() {
+  @Unroll
+	def 'RomanNumerals can translate #arabic to Roman'() {
 		given:
 		def romanNumeral = new RomanNumeral()
 
 		when:
-		def result = romanNumeral.translate(1)
+		def result = romanNumeral.translate(arabic)
 
 		then:
-		result == 'I'
+		result == roman
+
+    where:
+    arabic || roman
+    1      || 'I'
+    5      || 'V'
 	}
 
-	def 'RomanNumerals can translate 5 to V'() {
-		given:
-		def romanNumeral = new RomanNumeral()
-
-    when:
-    def result = romanNumeral.translate(5)
-
-    then:
-    result == 'V'
-
-	}
 }
