@@ -19,4 +19,16 @@ class RomanNumeralSpec extends Specification {
 		then:
 		result == 'I'
 	}
+
+	def 'RomanNumerals can translate 5 to V'() {
+		given:
+		def romanNumeral = new RomanNumeral()
+
+    when:
+    def result = romanNumeral.translate(5)
+
+    then:
+    result == 'V'
+
+	}
 }

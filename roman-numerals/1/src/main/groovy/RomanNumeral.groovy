@@ -5,7 +5,13 @@
  * @author walterg2, @date 3/6/14 9:32 PM
  */
 class RomanNumeral {
+
+	def ARABIC_TO_ROMAN = [
+    1 : 'I',
+    5 : 'V'
+	]
+
     def translate(def number) {
-    	'I'
+    	ARABIC_TO_ROMAN[number]
     }
 }
