@@ -38,16 +38,14 @@ class RomanNumeral {
 
     def translate(String roman) {
       def result = 0
-      def skip = false
-      roman.eachWithIndex { character, index -> 
-        if (index < (roman.length() - 1) && ROMAN_TO_ARABIC["${character}${roman[index + 1]}"] && !skip) {
+
+      for (def index = 0; index < roman.length(); index++) {
+        def character = roman[index]
+        if (index < roman.length() - 1 && ROMAN_TO_ARABIC["${character}${roman[index + 1]}"]) {
           result += ROMAN_TO_ARABIC["${character}${roman[index + 1]}"]
-          skip = true
-        } else if (!skip) {
-          result += ROMAN_TO_ARABIC["${character}"]
-          skip = false
+          index++
         } else {
-          skip = false
+          result += ROMAN_TO_ARABIC["${character}"]
         }
       }
 
