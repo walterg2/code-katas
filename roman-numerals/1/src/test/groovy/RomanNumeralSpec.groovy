@@ -38,6 +38,8 @@ class RomanNumeralSpec extends Specification {
     67     || 'LXVII'
     82     || 'LXXXII'
     95     || 'XCV'
+    102    || 'CII'
+    323    || 'CCCXXIII'
 
 	}
 
