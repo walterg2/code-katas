@@ -62,10 +62,12 @@ class RomanNumeralSpec extends Specification {
     result == arabic
 
     where:
-    roman || arabic
-    'I'   || 1
-    'V'   || 5
-    
+    roman           || arabic
+    'I'             || 1
+    'II'            || 2
+    'V'             || 5
+    'X'             || 10
+
   }
 
 }

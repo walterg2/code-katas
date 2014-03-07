@@ -39,7 +39,7 @@ class RomanNumeral {
     def translate(String roman) {
       def result = 0
       roman.getChars().each { 
-        result = ROMAN_TO_ARABIC["${it}"]
+        result += ROMAN_TO_ARABIC["${it}"]
       }
 
       result
