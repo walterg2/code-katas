@@ -33,7 +33,7 @@ class RomanNumeralSpec extends Specification {
     17     || 'XVII'
     25     || 'XXV'
     32     || 'XXXII'
-    
+    47     || 'XLVII'
 
 	}
 
