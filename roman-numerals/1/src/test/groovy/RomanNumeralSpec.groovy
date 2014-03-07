@@ -50,4 +50,22 @@ class RomanNumeralSpec extends Specification {
 
 	}
 
+  @Unroll
+  def 'RomanNumerals can translate #roman to Arabic'() {
+    given:
+    def romanNumeral = new RomanNumeral()
+
+    when:
+    def result = romanNumeral.translate(roman)
+
+    then:
+    result == arabic
+
+    where:
+    roman || arabic
+    'I'   || 1
+    'V'   || 5
+    
+  }
+
 }

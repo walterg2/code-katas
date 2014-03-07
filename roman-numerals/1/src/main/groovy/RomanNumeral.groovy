@@ -22,13 +22,24 @@ class RomanNumeral {
        1 : 'I'
 	]
 
-    def translate(def number) {
+  def ROMAN_TO_ARABIC = ARABIC_TO_ROMAN.collectEntries { key, value -> [value, key] }
+
+    def translate(int number) {
       def result = ''
     	ARABIC_TO_ROMAN.each {
         while (number > it.key - 1) {
           result += it.value
           number -= it.key
         }
+      }
+
+      result
+    }
+
+    def translate(String roman) {
+      def result = 0
+      roman.getChars().each { 
+        result = ROMAN_TO_ARABIC["${it}"]
       }
 
       result
