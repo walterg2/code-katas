@@ -8,7 +8,10 @@ class RomanNumeral {
 
 	def ARABIC_TO_ROMAN = [
     1 : 'I',
-    5 : 'V'
+    4 : 'IV',
+    5 : 'V',
+    9 : 'IX',
+    10 : 'X'
 	]
 
     def translate(def number) {
