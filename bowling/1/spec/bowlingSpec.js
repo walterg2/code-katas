@@ -3,7 +3,7 @@ describe("Bowling", function() {
     var game = new BowlingGame();
   });
 
-  describe("Calculating special scores", function () {
+  describe("Calculating rolls", function () {
     var game;
 
     beforeEach(function () {
