@@ -6,5 +6,9 @@ var BowlingGame = function() {
 };
 
 BowlingGame.prototype.calculateTotalScore = function(line) {
-  return this.values[line];
+  if ((/\d+/).test(line)) {
+    return parseInt(line);
+  } else {
+    return this.values[line];
+  }
 };
