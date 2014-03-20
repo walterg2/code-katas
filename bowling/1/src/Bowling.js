@@ -1,6 +1,10 @@
-var Bowling = {
+var BowlingGame = function() {
+  this.values = {
+    '-' : 0,
+    'X' : 10
+  }
 };
 
-Bowling.Game = function() {
-  
+BowlingGame.prototype.calculateTotalScore = function(line) {
+  return this.values[line];
 };
